@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+<manifest filename="D:\project_time\watchface00\garmin-watchface01\manifest.xml"/>
+<pcToLineNum>
+<entry filename="D:\\project_time\\watchface00\\garmin-watchface01\\source\\wf1App.mc" id="1" lineNum="26" parent="globals" pc="268435460" symbol="getApp"/>
+<entry filename="D:\\project_time\\watchface00\\garmin-watchface01\\source\\wf1App.mc" id="1" lineNum="27" parent="globals" pc="268435470" symbol="getApp"/>
+<entry filename="D:\\project_time\\watchface00\\garmin-watchface01\\bin\\gen\\006-B4394-00\\source\\Rez.mcgen" id="2" lineNum="7" parent="globals/Rez" pc="268435486" symbol="&lt;init&gt;"/>
+<entry filename="D:\\project_time\\watchface00\\garmin-watchface01\\source\\wf1View.mc" id="3" lineNum="13" parent="globals/wf1View" pc="268435510" symbol="&lt;init&gt;"/>
+<entry filename="D:\\project_time\\watchface00\\garmin-watchface01\\source\\wf1View.mc" id="4" lineNum="19" parent="globals/wf1View" pc="268435529" symbol="onLayout"/>
+<entry filename="D:\\project_time\\watchface00\\garmin-watchface01\\source\\wf1View.mc" id="4" lineNum="20" parent="globals/wf1View" pc="268435531" symbol="onLayout"/>
+<entry filename="D:\\project_time\\watchface00\\garmin-watchface01\\source\\wf1View.mc" id="4" lineNum="21" parent="globals/wf1View" pc="268435578" symbol="onLayout"/>
+<entry filename="D:\\project_time\\watchface00\\garmin-watchface01\\source\\wf1View.mc" id="4" lineNum="22" parent="globals/wf1View" pc="268435625" symbol="onLayout"/>
+<entry filename="D:\\project_time\\watchface00\\garmin-watchface01\\source\\wf1View.mc" id="4" lineNum="23" parent="globals/wf1View" pc="268435672" symbol="onLayout"/>
+<entry filename="D:\\project_time\\watchface00\\garmin-watchface01\\source\\wf1View.mc" id="5" lineNum="17" parent="globals/wf1View" pc="268435720" symbol="initialize"/>
+<entry filename="D:\\project_time\\watchface00\\garmin-watchface01\\source\\wf1View.mc" id="5" lineNum="17" parent="globals/wf1View" pc="268435722" symbol="initialize"/>
+<entry filename="D:\\project_time\\watchface00\\garmin-watchface01\\source\\wf1View.mc" id="6" lineNum="26" parent="globals/wf1View" pc="268435741" symbol="onUpdate"/>
+<entry filename="D:\\project_time\\watchface00\\garmin-watchface01\\source\\wf1View.mc" id="6" lineNum="28" parent="globals/wf1View" pc="268435745" symbol="onUpdate"/>
+<entry filename="D:\\project_time\\watchface00\\garmin-watchface01\\source\\wf1View.mc" id="6" lineNum="29" parent="globals/wf1View" pc="268435767" symbol="onUpdate"/>
+<entry filename="D:\\project_time\\watchface00\\garmin-watchface01\\source\\wf1View.mc" id="6" lineNum="31" parent="globals/wf1View" pc="268435779" symbol="onUpdate"/>
+<entry filename="D:\\project_time\\watchface00\\garmin-watchface01\\source\\wf1View.mc" id="6" lineNum="33" parent="globals/wf1View" pc="268435809" symbol="onUpdate"/>
+<entry filename="D:\\project_time\\watchface00\\garmin-watchface01\\source\\wf1View.mc" id="6" lineNum="34" parent="globals/wf1View" pc="268435826" symbol="onUpdate"/>
+<entry filename="D:\\project_time\\watchface00\\garmin-watchface01\\source\\wf1View.mc" id="6" lineNum="35" parent="globals/wf1View" pc="268435900" symbol="onUpdate"/>
+<entry filename="D:\\project_time\\watchface00\\garmin-watchface01\\source\\wf1View.mc" id="6" lineNum="37" parent="globals/wf1View" pc="268435937" symbol="onUpdate"/>
+<entry filename="D:\\project_time\\watchface00\\garmin-watchface01\\source\\wf1View.mc" id="6" lineNum="38" parent="globals/wf1View" pc="268435974" symbol="onUpdate"/>
+<entry filename="D:\\project_time\\watchface00\\garmin-watchface01\\source\\wf1View.mc" id="6" lineNum="39" parent="globals/wf1View" pc="268436011" symbol="onUpdate"/>
+<entry filename="D:\\project_time\\watchface00\\garmin-watchface01\\source\\wf1View.mc" id="6" lineNum="46" parent="globals/wf1View" pc="268436115" symbol="onUpdate"/>
+<entry filename="D:\\project_time\\watchface00\\garmin-watchface01\\source\\wf1View.mc" id="6" lineNum="47" parent="globals/wf1View" pc="268436167" symbol="onUpdate"/>
+<entry filename="D:\\project_time\\watchface00\\garmin-watchface01\\source\\wf1View.mc" id="6" lineNum="48" parent="globals/wf1View" pc="268436204" symbol="onUpdate"/>
+<entry filename="D:\\project_time\\watchface00\\garmin-watchface01\\source\\wf1View.mc" id="6" lineNum="49" parent="globals/wf1View" pc="268436221" symbol="onUpdate"/>
+<entry filename="D:\\project_time\\watchface00\\garmin-watchface01\\source\\wf1View.mc" id="6" lineNum="51" parent="globals/wf1View" pc="268436284" symbol="onUpdate"/>
+<entry filename="D:\\project_time\\watchface00\\garmin-watchface01\\source\\wf1View.mc" id="6" lineNum="52" parent="globals/wf1View" pc="268436301" symbol="onUpdate"/>
+<entry filename="D:\\project_time\\watchface00\\garmin-watchface01\\source\\wf1View.mc" id="7" lineNum="15" parent="globals/wf1View" pc="268436334" symbol="onTimer"/>
+<entry filename="D:\\project_time\\watchface00\\garmin-watchface01\\source\\wf1View.mc" id="7" lineNum="15" parent="globals/wf1View" pc="268436336" symbol="onTimer"/>
+<entry filename="D:\\project_time\\watchface00\\garmin-watchface01\\source\\wf1App.mc" id="8" lineNum="5" parent="globals/wf1App" pc="268436353" symbol="&lt;init&gt;"/>
+<entry filename="D:\\project_time\\watchface00\\garmin-watchface01\\source\\wf1App.mc" id="9" lineNum="12" parent="globals/wf1App" pc="268436372" symbol="onStart"/>
+<entry filename="D:\\project_time\\watchface00\\garmin-watchface01\\source\\wf1App.mc" id="10" lineNum="20" parent="globals/wf1App" pc="268436375" symbol="getInitialView"/>
+<entry filename="D:\\project_time\\watchface00\\garmin-watchface01\\source\\wf1App.mc" id="10" lineNum="21" parent="globals/wf1App" pc="268436377" symbol="getInitialView"/>
+<entry filename="D:\\project_time\\watchface00\\garmin-watchface01\\source\\wf1App.mc" id="11" lineNum="7" parent="globals/wf1App" pc="268436418" symbol="initialize"/>
+<entry filename="D:\\project_time\\watchface00\\garmin-watchface01\\source\\wf1App.mc" id="11" lineNum="8" parent="globals/wf1App" pc="268436420" symbol="initialize"/>
+<entry filename="D:\\project_time\\watchface00\\garmin-watchface01\\source\\wf1App.mc" id="12" lineNum="16" parent="globals/wf1App" pc="268436439" symbol="onStop"/>
+<entry filename="D:\\project_time\\watchface00\\garmin-watchface01\\bin\\gen\\006-B4394-00\\source\\Rez.mcgen" id="13" lineNum="23" parent="globals/Rez/Layouts" pc="268436442" symbol="WatchFace"/>
+<entry filename="D:\\project_time\\watchface00\\garmin-watchface01\\bin\\gen\\006-B4394-00\\source\\Rez.mcgen" id="13" lineNum="24" parent="globals/Rez/Layouts" pc="268436452" symbol="WatchFace"/>
+</pcToLineNum>
+<symbolTable>
+<entry id="8388639" module="true" symbol="Graphics"/>
+<entry field="true" id="9" symbol="bground"/>
+<entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+<entry id="7" module="true" symbol="globals/Rez/Menus"/>
+<entry id="8388924" module="true" symbol="Gregorian"/>
+<entry field="true" id="8388611" module="true" symbol="Toybox"/>
+<entry field="true" id="19" symbol="AppName"/>
+<entry id="8" module="true" symbol="globals/Rez/Strings"/>
+<entry id="8388772" module="true" object="true" symbol="Fonts"/>
+<entry id="8388648" module="true" symbol="WatchUi"/>
+<entry id="2" module="true" symbol="globals/Rez"/>
+<entry id="8389124" method="true" symbol="onUpdate"/>
+<entry id="8389375" method="true" object="true" symbol="WatchFace"/>
+<entry id="8388771" module="true" object="true" symbol="Drawables"/>
+<entry id="16" module="true" symbol="Menus"/>
+<entry id="8389275" method="true" symbol="getApp"/>
+<entry id="6" module="true" symbol="globals/Rez/Layouts"/>
+<entry id="8389122" method="true" symbol="onLayout"/>
+<entry id="5" module="true" symbol="globals/Rez/JsonData"/>
+<entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+<entry id="8388644" module="true" symbol="System"/>
+<entry id="8388645" module="true" symbol="Time"/>
+<entry id="8388769" module="true" object="true" symbol="Rez"/>
+<entry field="true" id="11" symbol="mfont"/>
+<entry field="true" id="12" symbol="myfont"/>
+<entry id="8388640" module="true" symbol="Lang"/>
+<entry id="8390088" module="true" object="true" symbol="JsonData"/>
+<entry field="true" id="18" symbol="LauncherIcon"/>
+<entry id="8388610" symbol="statics"/>
+<entry id="8389350" module="true" symbol="globals"/>
+<entry id="8388770" module="true" object="true" symbol="Strings"/>
+<entry id="8388702" method="true" symbol="initialize"/>
+<entry id="8389279" method="true" symbol="onStart"/>
+<entry id="13" object="true" symbol="wf1App"/>
+<entry id="8389280" method="true" symbol="getInitialView"/>
+<entry id="8389281" method="true" symbol="onStop"/>
+<entry id="15" module="true" symbol="Layouts"/>
+<entry id="4" module="true" symbol="globals/Rez/Fonts"/>
+<entry id="8388635" module="true" symbol="Application"/>
+<entry id="17" method="true" symbol="onTimer"/>
+<entry id="14" object="true" symbol="wf1View"/>
+<entry field="true" id="10" symbol="lfont"/>
+</symbolTable>
+<localVars>
+<entry arg="true" endPc="268435719" name="dc" stackId="1" startPc="268435529"/>
+<entry arg="true" endPc="268436333" name="dc" stackId="1" startPc="268435741"/>
+<entry endPc="268436332" name="clockTime" stackId="2" startPc="268435745"/>
+<entry endPc="268436332" name="timeString" stackId="3" startPc="268435745"/>
+<entry endPc="268436332" name="today" stackId="4" startPc="268435745"/>
+<entry endPc="268436332" name="todayLong" stackId="5" startPc="268435745"/>
+<entry endPc="268436332" name="dateString" stackId="6" startPc="268435745"/>
+<entry endPc="268436332" name="myStats" stackId="7" startPc="268435745"/>
+<entry arg="true" endPc="268436458" name="dc" stackId="1" startPc="268436442"/>
+</localVars>
+<annotations>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+<annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="mfont"/>
+<annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="myfont"/>
+<annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="lfont"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="bground"/>
+</annotations>
+<dataEntryOffsetMappings>
+<dataEntry label="globals" offset="87" parentId="" symbolId="globals" type="module"/>
+<dataEntry label="globals/Rez" offset="190" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry label="globals/wf1View" offset="269" parentId="globals" symbolId="wf1View" type="class"/>
+<dataEntry label="globals/wf1App" offset="340" parentId="globals" symbolId="wf1App" type="class"/>
+<dataEntry label="globals/Rez/Drawables" offset="411" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry label="globals/Rez/Layouts" offset="458" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry label="globals/Rez/Menus" offset="497" parentId="Rez" symbolId="Menus" type="module"/>
+<dataEntry label="globals/Rez/Fonts" offset="528" parentId="Rez" symbolId="Fonts" type="module"/>
+<dataEntry label="globals/Rez/Strings" offset="583" parentId="Rez" symbolId="Strings" type="module"/>
+<dataEntry label="globals/Rez/JsonData" offset="622" parentId="Rez" symbolId="JsonData" type="module"/>
+</dataEntryOffsetMappings>
+<functions>
+<functionEntry accessMode="public" endPc="268435485" name="getApp" startPc="268435460">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435509" name="&lt;init&gt;" parent="Rez" startPc="268435486">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435528" name="&lt;init&gt;" parent="wf1View" startPc="268435510">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435719" name="onLayout" parent="wf1View" startPc="268435529">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435740" name="initialize" parent="wf1View" startPc="268435720">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436333" name="onUpdate" parent="wf1View" startPc="268435741">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436352" name="onTimer" parent="wf1View" startPc="268436334">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436371" name="&lt;init&gt;" parent="wf1App" startPc="268436353">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436374" name="onStart" parent="wf1App" startPc="268436372">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436417" name="getInitialView" parent="wf1App" startPc="268436375">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436438" name="initialize" parent="wf1App" startPc="268436418">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436441" name="onStop" parent="wf1App" startPc="268436439">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Menus">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Fonts">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="JsonData">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436458" name="WatchFace" parent="Layouts" startPc="268436442">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+</functions>
+</debugInfo>

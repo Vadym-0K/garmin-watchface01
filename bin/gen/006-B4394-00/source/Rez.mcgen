@@ -6,6 +6,7 @@ using Toybox.Graphics as Gfx;
 
 module Rez {
     module Drawables {
+        (:initialized) var bground as Symbol;
         (:initialized) var LauncherIcon as Symbol;
     } // Drawables
 

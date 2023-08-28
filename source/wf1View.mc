@@ -8,33 +8,27 @@ using Toybox.Time.Gregorian;
 var myfont = null;
 var lfont = null;
 var mfont = null;
+var bground = null;
 
 class wf1View extends WatchUi.WatchFace {
 
     function onTimer() {WatchUi.requestUpdate();}
-    function initialize() {
-        WatchFace.initialize();
-    }
 
-    // Load your resources here
+    function initialize() {WatchFace.initialize();}
+
     function onLayout(dc as Dc) as Void {
-        //setLayout(Rez.Layouts.WatchFace(dc));
         myfont = Toybox.WatchUi.loadResource(Rez.Fonts.myfont);
         lfont = Toybox.WatchUi.loadResource(Rez.Fonts.lfont);
         mfont = Toybox.WatchUi.loadResource(Rez.Fonts.mfont);
+        bground = Toybox.WatchUi.loadResource(Rez.Drawables.bground);
     }
 
-    // Called when this View is brought to the foreground. Restore
-    // the state of this View and prepare it to be shown. This includes
-    // loading resources into memory.
-    function onShow() as Void {
-    }
-
-    // Update the view
     function onUpdate(dc as Dc) as Void {
 
-         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
-         dc.clear();
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
+        dc.clear();
+
+        dc.drawBitmap(0, 0, bground);
 
         var clockTime = System.getClockTime();
         var timeString = Lang.format("$1$:$2$", [clockTime.hour, clockTime.min.format("%02d")]);
@@ -48,24 +42,16 @@ class wf1View extends WatchUi.WatchFace {
             today.year,
             today.month.format("%02d"),
             today.day.format("%02d"),
-        ]
-        );
-        
+        ]);
         dc.drawText(87, 50, myfont, todayLong.day_of_week.toUpper(), Graphics.TEXT_JUSTIFY_CENTER);
         dc.drawText(88, 120, mfont, dateString, Graphics.TEXT_JUSTIFY_CENTER);
         var myStats = System.getSystemStats();
         dc.drawText(144, 15, myfont, myStats.battery.format("%02d") + "%", Graphics.TEXT_JUSTIFY_CENTER);
-    }
+        
+        // var bat = myStats.battery/20;
+        // bat.toNumber();
+        // dc.setPenWidth(10);
+        // dc.drawLine(10, 112, 10, 112-bat*20);
 
-    function onHide() as Void {
     }
-
-    // The user has just looked at their watch. Timers and animations may be started here.
-    function onExitSleep() as Void {
-    }
-
-    // Terminate any active timers and prepare for slow updates.
-    function onEnterSleep() as Void {
-    }
-
 }
