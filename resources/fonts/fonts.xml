@@ -1,0 +1,5 @@
+<fonts>
+    <font id = "myfont" filename="20.fnt" antialias="true"/>
+    <font id = "lfont" filename="35.fnt" antialias="true"/>
+    <font id = "mfont" filename="30.fnt" antialias="true"/>
+</fonts>

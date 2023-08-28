@@ -1,0 +1,241 @@
+[ @file = "D:\project_time\watchface00\wf1\source\wf1View.mc"; @line = 1; ]
+import Toybox.Graphics;
+[ @file = "D:\project_time\watchface00\wf1\source\wf1View.mc"; @line = 2; ]
+import Toybox.Lang;
+[ @file = "D:\project_time\watchface00\wf1\source\wf1View.mc"; @line = 3; ]
+import Toybox.System;
+[ @file = "D:\project_time\watchface00\wf1\source\wf1View.mc"; @line = 4; ]
+import Toybox.WatchUi;
+[ @file = "D:\project_time\watchface00\wf1\source\wf1View.mc"; @line = 5; ]
+using Toybox.Time;
+[ @file = "D:\project_time\watchface00\wf1\source\wf1View.mc"; @line = 6; ]
+using Toybox.Time.Gregorian;
+[ @file = "D:\project_time\watchface00\wf1\source\wf1View.mc"; @line = 8; @position = 4; ]
+var myfont = null;
+[ @file = "D:\project_time\watchface00\wf1\source\wf1View.mc"; @line = 9; @position = 4; ]
+var lfont = null;
+[ @file = "D:\project_time\watchface00\wf1\source\wf1View.mc"; @line = 10; @position = 4; ]
+var mfont = null;
+[ @file = "D:\project_time\watchface00\wf1\source\wf1View.mc"; @line = 12; ]
+class wf1View extends WatchUi.WatchFace{
+    [ @file = "D:\project_time\watchface00\wf1\source\wf1View.mc"; @line = 12; ]
+    <init> {
+    }
+    [ @file = "D:\project_time\watchface00\wf1\source\wf1View.mc"; @line = 12; ]
+    static
+    <init> {
+    }
+    [ @file = "D:\project_time\watchface00\wf1\source\wf1View.mc"; @line = 14; ]
+    function onTimer() {
+D_project_time_watchface00_wf1_source_wf1View_mc_14_23_start:
+[ "D:\project_time\watchface00\wf1\source\wf1View.mc" 14 24 ]
+        %tmp.1 = getm $.Toybox.WatchUi;
+        %tmp.2 = getv function %tmp.1 :requestUpdate;
+        invoke %tmp.1 %tmp.2();
+D_project_time_watchface00_wf1_source_wf1View_mc_14_23_stop:
+    }
+    [ @file = "D:\project_time\watchface00\wf1\source\wf1View.mc"; @line = 15; ]
+    function initialize() as Void {
+D_project_time_watchface00_wf1_source_wf1View_mc_15_26_start:
+[ "D:\project_time\watchface00\wf1\source\wf1View.mc" 16 8 ]
+        %tmp.2 = getv ? :WatchFace;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+D_project_time_watchface00_wf1_source_wf1View_mc_15_26_stop:
+    }
+    [ @file = "D:\project_time\watchface00\wf1\source\wf1View.mc"; @line = 20; ]
+    function onLayout(dc as Dc) as Void {
+D_project_time_watchface00_wf1_source_wf1View_mc_20_40_start:
+[ "D:\project_time\watchface00\wf1\source\wf1View.mc" 22 8 ]
+        %tmp.1 = getm $.Toybox.WatchUi;
+        %tmp.2 = getv function %tmp.1 :loadResource;
+        %tmp.4 = getv ? :Rez;
+        %tmp.5 = getv %tmp.4 :Fonts;
+        %tmp.6 = getv %tmp.5 :myfont;
+        %tmp.7 = invoke %tmp.1 %tmp.2(%tmp.6);
+        putv self :myfont %tmp.7;
+[ "D:\project_time\watchface00\wf1\source\wf1View.mc" 23 8 ]
+        %tmp.8 = getm $.Toybox.WatchUi;
+        %tmp.9 = getv function %tmp.8 :loadResource;
+        %tmp.11 = getv ? :Rez;
+        %tmp.12 = getv %tmp.11 :Fonts;
+        %tmp.13 = getv %tmp.12 :lfont;
+        %tmp.14 = invoke %tmp.8 %tmp.9(%tmp.13);
+        putv self :lfont %tmp.14;
+[ "D:\project_time\watchface00\wf1\source\wf1View.mc" 24 8 ]
+        %tmp.15 = getm $.Toybox.WatchUi;
+        %tmp.16 = getv function %tmp.15 :loadResource;
+        %tmp.18 = getv ? :Rez;
+        %tmp.19 = getv %tmp.18 :Fonts;
+        %tmp.20 = getv %tmp.19 :mfont;
+        %tmp.21 = invoke %tmp.15 %tmp.16(%tmp.20);
+        putv self :mfont %tmp.21;
+D_project_time_watchface00_wf1_source_wf1View_mc_20_40_stop:
+    }
+    [ @file = "D:\project_time\watchface00\wf1\source\wf1View.mc"; @line = 30; ]
+    function onShow() as Void {
+    }
+    [ @file = "D:\project_time\watchface00\wf1\source\wf1View.mc"; @line = 34; ]
+    function onUpdate(dc as Dc) as Void {
+D_project_time_watchface00_wf1_source_wf1View_mc_34_40_start:
+[ "D:\project_time\watchface00\wf1\source\wf1View.mc" 36 9 ]
+        %tmp.1 = lgetv %dc;
+        %tmp.2 = getv function %tmp.1 :setColor;
+        %tmp.3 = getm $.Toybox.Graphics;
+        %tmp.4 = getv %tmp.3 :COLOR_WHITE;
+        %tmp.5 = getm $.Toybox.Graphics;
+        %tmp.6 = getv %tmp.5 :COLOR_BLACK;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "D:\project_time\watchface00\wf1\source\wf1View.mc" 37 9 ]
+        %tmp.7 = lgetv %dc;
+        %tmp.8 = getv function %tmp.7 :clear;
+        invoke %tmp.7 %tmp.8();
+[ "D:\project_time\watchface00\wf1\source\wf1View.mc" 39 8 ]
+        [ "D_project_time_watchface00_wf1_source_wf1View_mc_34_40_start" "D_project_time_watchface00_wf1_source_wf1View_mc_34_40_stop" ]
+        %clockTime.1 = local;
+        %tmp.9 = getm $.Toybox.System;
+        %tmp.10 = getv function %tmp.9 :getClockTime;
+        %tmp.11 = invoke %tmp.9 %tmp.10();
+        lputv %clockTime.1 %tmp.11;
+[ "D:\project_time\watchface00\wf1\source\wf1View.mc" 40 8 ]
+        [ "D_project_time_watchface00_wf1_source_wf1View_mc_34_40_start" "D_project_time_watchface00_wf1_source_wf1View_mc_34_40_stop" ]
+        %timeString.2 = local;
+        %tmp.12 = getm $.Toybox.Lang;
+        %tmp.13 = getv function %tmp.12 :format;
+        %tmp.14 = "$1$:$2$";
+        %tmp.15 = newa 2;
+        %tmp.16 = lgetv %clockTime.1;
+        %tmp.17 = getv %tmp.16 :hour;
+        %tmp.18 = dup %tmp.15;
+        %tmp.19 = aputv %tmp.18 0 %tmp.17;
+        %tmp.20 = lgetv %clockTime.1;
+        %tmp.21 = getv %tmp.20 :min;
+        %tmp.22 = getv function %tmp.21 :format;
+        %tmp.23 = "%02d";
+        %tmp.24 = invoke %tmp.21 %tmp.22(%tmp.23);
+        %tmp.25 = dup %tmp.19;
+        %tmp.26 = aputv %tmp.25 1 %tmp.24;
+        %tmp.27 = invoke %tmp.12 %tmp.13(%tmp.14, %tmp.26);
+        lputv %timeString.2 %tmp.27;
+[ "D:\project_time\watchface00\wf1\source\wf1View.mc" 41 8 ]
+        %tmp.28 = lgetv %dc;
+        %tmp.29 = getv function %tmp.28 :drawText;
+        %tmp.30 = 88;
+        %tmp.31 = 68;
+        %tmp.33 = getv ? :lfont;
+        %tmp.35 = lgetv %timeString.2;
+        %tmp.36 = getm $.Toybox.Graphics;
+        %tmp.37 = getv %tmp.36 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.28 %tmp.29(%tmp.30, %tmp.31, %tmp.33, %tmp.35, %tmp.37);
+[ "D:\project_time\watchface00\wf1\source\wf1View.mc" 43 8 ]
+        [ "D_project_time_watchface00_wf1_source_wf1View_mc_34_40_start" "D_project_time_watchface00_wf1_source_wf1View_mc_34_40_stop" ]
+        %today.3 = local;
+        %tmp.38 = getm $.Toybox.Time.Gregorian;
+        %tmp.39 = getv function %tmp.38 :info;
+        %tmp.40 = getm $.Toybox.Time;
+        %tmp.41 = getv function %tmp.40 :now;
+        %tmp.42 = invoke %tmp.40 %tmp.41();
+        %tmp.43 = getm $.Toybox.Time;
+        %tmp.44 = getv %tmp.43 :FORMAT_SHORT;
+        %tmp.45 = invoke %tmp.38 %tmp.39(%tmp.42, %tmp.44);
+        lputv %today.3 %tmp.45;
+[ "D:\project_time\watchface00\wf1\source\wf1View.mc" 44 8 ]
+        [ "D_project_time_watchface00_wf1_source_wf1View_mc_34_40_start" "D_project_time_watchface00_wf1_source_wf1View_mc_34_40_stop" ]
+        %todayLong.4 = local;
+        %tmp.46 = getm $.Toybox.Time.Gregorian;
+        %tmp.47 = getv function %tmp.46 :info;
+        %tmp.48 = getm $.Toybox.Time;
+        %tmp.49 = getv function %tmp.48 :now;
+        %tmp.50 = invoke %tmp.48 %tmp.49();
+        %tmp.51 = getm $.Toybox.Time;
+        %tmp.52 = getv %tmp.51 :FORMAT_LONG;
+        %tmp.53 = invoke %tmp.46 %tmp.47(%tmp.50, %tmp.52);
+        lputv %todayLong.4 %tmp.53;
+[ "D:\project_time\watchface00\wf1\source\wf1View.mc" 45 8 ]
+        [ "D_project_time_watchface00_wf1_source_wf1View_mc_34_40_start" "D_project_time_watchface00_wf1_source_wf1View_mc_34_40_stop" ]
+        %dateString.5 = local;
+        %tmp.54 = getm $.Toybox.Lang;
+        %tmp.55 = getv function %tmp.54 :format;
+        %tmp.56 = "$1$$2$$3$";
+        %tmp.57 = newa 3;
+        %tmp.58 = lgetv %today.3;
+        %tmp.59 = getv %tmp.58 :year;
+        %tmp.60 = dup %tmp.57;
+        %tmp.61 = aputv %tmp.60 0 %tmp.59;
+        %tmp.62 = lgetv %today.3;
+        %tmp.63 = getv %tmp.62 :month;
+        %tmp.64 = getv function %tmp.63 :format;
+        %tmp.65 = "%02d";
+        %tmp.66 = invoke %tmp.63 %tmp.64(%tmp.65);
+        %tmp.67 = dup %tmp.61;
+        %tmp.68 = aputv %tmp.67 1 %tmp.66;
+        %tmp.69 = lgetv %today.3;
+        %tmp.70 = getv %tmp.69 :day;
+        %tmp.71 = getv function %tmp.70 :format;
+        %tmp.72 = "%02d";
+        %tmp.73 = invoke %tmp.70 %tmp.71(%tmp.72);
+        %tmp.74 = dup %tmp.68;
+        %tmp.75 = aputv %tmp.74 2 %tmp.73;
+        %tmp.76 = invoke %tmp.54 %tmp.55(%tmp.56, %tmp.75);
+        lputv %dateString.5 %tmp.76;
+[ "D:\project_time\watchface00\wf1\source\wf1View.mc" 54 8 ]
+        %tmp.77 = lgetv %dc;
+        %tmp.78 = getv function %tmp.77 :drawText;
+        %tmp.79 = 87;
+        %tmp.80 = 50;
+        %tmp.82 = getv ? :myfont;
+        %tmp.83 = lgetv %todayLong.4;
+        %tmp.84 = getv %tmp.83 :day_of_week;
+        %tmp.85 = getv function %tmp.84 :toUpper;
+        %tmp.86 = invoke %tmp.84 %tmp.85();
+        %tmp.87 = getm $.Toybox.Graphics;
+        %tmp.88 = getv %tmp.87 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.77 %tmp.78(%tmp.79, %tmp.80, %tmp.82, %tmp.86, %tmp.88);
+[ "D:\project_time\watchface00\wf1\source\wf1View.mc" 55 8 ]
+        %tmp.89 = lgetv %dc;
+        %tmp.90 = getv function %tmp.89 :drawText;
+        %tmp.91 = 88;
+        %tmp.92 = 120;
+        %tmp.94 = getv ? :mfont;
+        %tmp.96 = lgetv %dateString.5;
+        %tmp.97 = getm $.Toybox.Graphics;
+        %tmp.98 = getv %tmp.97 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.89 %tmp.90(%tmp.91, %tmp.92, %tmp.94, %tmp.96, %tmp.98);
+[ "D:\project_time\watchface00\wf1\source\wf1View.mc" 56 8 ]
+        [ "D_project_time_watchface00_wf1_source_wf1View_mc_34_40_start" "D_project_time_watchface00_wf1_source_wf1View_mc_34_40_stop" ]
+        %myStats.6 = local;
+        %tmp.99 = getm $.Toybox.System;
+        %tmp.100 = getv function %tmp.99 :getSystemStats;
+        %tmp.101 = invoke %tmp.99 %tmp.100();
+        lputv %myStats.6 %tmp.101;
+[ "D:\project_time\watchface00\wf1\source\wf1View.mc" 57 8 ]
+        %tmp.102 = lgetv %dc;
+        %tmp.103 = getv function %tmp.102 :drawText;
+        %tmp.104 = 144;
+        %tmp.105 = 15;
+        %tmp.107 = getv ? :myfont;
+        %tmp.108 = lgetv %myStats.6;
+        %tmp.109 = getv %tmp.108 :battery;
+        %tmp.110 = getv function %tmp.109 :format;
+        %tmp.111 = "%02d";
+        %tmp.112 = invoke %tmp.109 %tmp.110(%tmp.111);
+        %tmp.113 = "%";
+        %tmp.114 = add %tmp.112 %tmp.113;
+        %tmp.115 = getm $.Toybox.Graphics;
+        %tmp.116 = getv %tmp.115 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.102 %tmp.103(%tmp.104, %tmp.105, %tmp.107, %tmp.114, %tmp.116);
+D_project_time_watchface00_wf1_source_wf1View_mc_34_40_stop:
+    }
+    [ @file = "D:\project_time\watchface00\wf1\source\wf1View.mc"; @line = 60; ]
+    function onHide() as Void {
+    }
+    [ @file = "D:\project_time\watchface00\wf1\source\wf1View.mc"; @line = 64; ]
+    function onExitSleep() as Void {
+    }
+    [ @file = "D:\project_time\watchface00\wf1\source\wf1View.mc"; @line = 68; ]
+    function onEnterSleep() as Void {
+    }
+}
+[ @file = "D:\project_time\watchface00\wf1\source\wf1View.mc"; @line = 1; ]
+<init> {
+}
